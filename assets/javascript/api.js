@@ -7,7 +7,7 @@ function consoleLog() {
     console.log(title);
 
 
-    var omdb = "http://www.omdbapi.com/?t=";
+    var omdb = "https://www.omdbapi.com/?t=";
     var apiKey = "&apikey=c797a0d9";
     
     var url = omdb+title+apiKey;
@@ -50,6 +50,8 @@ function consoleLog() {
         document.getElementById("Director").innerHTML = director;
         document.getElementById("Actors").innerHTML = actors;
         document.getElementById("Poster2").src=poster;
+
+        $(".temp-hidden").css("display", "block");
 
     });
 }
